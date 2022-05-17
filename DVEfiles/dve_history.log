@@ -1,0 +1,230 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+gui_create_pref_category -category {dlg_settings}
+gui_create_pref_key -category {dlg_settings} -key {tableWithImmediatePopup} -value_type {bool} -value {true}
+gui_create_pref_category -category {schem_obj_name}
+gui_create_pref_key -category {schem_obj_name} -key {show_cell_and_pin_with_symbol_name} -value_type {bool} -value {false}
+gui_create_pref_key -category {schem_pin_hc} -key {textExtFont} -value_type {string} -value {Helvetica,10,-1,5,50,0,0,0,0,0}
+gui_set_pref_value -category {schem_text} -key {sizeScheme} -value {Small}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Layout -key child_console_size_x -value 1863
+gui_set_state_value -category Layout -key child_console_size_y -value 174
+gui_set_state_value -category Layout -key child_data_size_x -value 169
+gui_set_state_value -category Layout -key child_data_size_y -value 742
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 169
+gui_set_state_value -category Layout -key child_hier_size_y -value 742
+gui_set_state_value -category Layout -key child_schematic_docknewline -value false
+gui_set_state_value -category Layout -key child_schematic_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_schematic_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_schematic_size_x -value 1528
+gui_set_state_value -category Layout -key child_schematic_size_y -value 737
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1528
+gui_set_state_value -category Layout -key child_source_size_y -value 737
+gui_set_state_value -category Layout -key main_pos_x -value 1
+gui_set_state_value -category Layout -key main_pos_y -value 38
+gui_set_state_value -category Layout -key main_size_x -value 1864
+gui_set_state_value -category Layout -key main_size_y -value 1053
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_sim_run Ucli -exe ./simv -args {-ucligui  } -dir .
+gui_list_expand -id Hier.1   bus
+gui_list_action -id  Hier.1 bus
+gui_list_select -id Hier.1 -current_item_name bus.bue_master_mux_0 -current_item_type Scope  -selected  { bus.bue_master_mux_0   }
+gui_list_select -id Hier.1 -current_item_name bus -current_item_type Scope  -selected  { bus   }
+gui_use_schematics 
+gui_sch_show -name bus
+gui_zoom -window Schematic.1 -rect { {-14716 -4079} {24741 14104} }
+gui_zoom -window Schematic.1 -rect { {-123439 -132210} {175251 5433} }
+gui_zoom -window Schematic.1 -rect { {-123439 -132210} {175251 5433} }
+gui_zoom -window Schematic.1 -rect { {-123439 -132210} {175251 5433} }
+gui_zoom -window Schematic.1 -rect { {-131362 -135790} {183048 9097} }
+gui_close_window -window Console.1
+gui_zoom -window Schematic.1 -rect { {-139559 -158645} {191399 31886} }
+gui_zoom -window Schematic.1 -rect { {-148257 -163769} {200120 36791} }
+gui_zoom -window Schematic.1 -rect { {-157486 -168871} {209227 42245} }
+gui_zoom -window Schematic.1 -rect { {-167021 -174420} {218993 47807} }
+gui_zoom -window Schematic.1 -rect { {-157879 -169208} {209753 42437} }
+gui_zoom -window Schematic.1 -rect { {-149230 -164163} {200895 37403} }
+gui_zoom -window Schematic.1 -rect { {-133189 -155075} {185107 28167} }
+gui_zoom -window Schematic.1 -rect { {-125671 -150737} {177469 23779} }
+gui_zoom -window Schematic.1 -rect { {-118376 -146568} {170328 19638} }
+gui_zoom -window Schematic.1 -rect { {-111493 -142569} {163463 15722} }
+gui_zoom -window Schematic.1 -rect { {-99095 -135432} {150865 8469} }
+gui_zoom -window Schematic.1 -rect { {-93143 -131931} {144914 5118} }
+gui_zoom -window Schematic.1 -rect { {-77645 -133127} {129361 -13954} }
+gui_zoom -window Schematic.1 -rect { {-68149 -136613} {120039 -28274} }
+gui_zoom -window Schematic.1 -rect { {-63745 -141969} {115481 -38789} }
+gui_zoom -window Schematic.1 -rect { {-52000 -142791} {103849 -53070} }
+gui_zoom -window Schematic.1 -rect { {-44982 -145256} {96699 -63691} }
+gui_zoom -window Schematic.1 -rect { {-41528 -148191} {93407 -70509} }
+gui_zoom -window Schematic.1 -rect { {-35451 -148801} {87216 -78182} }
+gui_zoom -window Schematic.1 -rect { {-32554 -150698} {84272 -83442} }
+gui_zoom -window Schematic.1 -rect { {-29706 -152375} {81557 -88321} }
+gui_zoom -window Schematic.1 -rect { {-27057 -152231} {78908 -91227} }
+gui_zoom -window Schematic.1 -rect { {-18261 -148209} {70043 -97372} }
+gui_zoom -window Schematic.1 -rect { {-12500 -145687} {64286 -101482} }
+gui_zoom -window Schematic.1 -rect { {-10674 -144580} {62455 -102480} }
+gui_zoom -window Schematic.1 -rect { {-5907 -141749} {57684 -105140} }
+gui_zoom -window Schematic.1 -rect { {-3013 -140022} {54797 -106741} }
+gui_zoom -window Schematic.1 -rect { {-1658 -139256} {53399 -107560} }
+gui_zoom -window Schematic.1 -rect { {2088 -137830} {52139 -109015} }
+gui_zoom -window Schematic.1 -rect { {4425 -137154} {52094 -109712} }
+gui_zoom -window Schematic.1 -rect { {7645 -135931} {50980 -110983} }
+gui_zoom -window Schematic.1 -rect { {9387 -135726} {50658 -111966} }
+gui_zoom -window Schematic.1 -rect { {11048 -135530} {50354 -112902} }
+gui_zoom -window Schematic.1 -rect { {14263 -134407} {48442 -114730} }
+gui_zoom -window Schematic.1 -rect { {14263 -128506} {48442 -108829} }
+gui_zoom -window Schematic.1 -rect { {14263 -122605} {48442 -102928} }
+gui_zoom -window Schematic.1 -rect { {14263 -116704} {48442 -97027} }
+gui_zoom -window Schematic.1 -rect { {14263 -110803} {48442 -91126} }
+gui_zoom -window Schematic.1 -rect { {13830 -110592} {49808 -89879} }
+gui_zoom -window Schematic.1 -rect { {13386 -110366} {51258 -88563} }
+gui_zoom -window Schematic.1 -rect { {12909 -110147} {52773 -87197} }
+gui_zoom -window Schematic.1 -rect { {12369 -109937} {54332 -85779} }
+gui_zoom -window Schematic.1 -rect { {11824 -109822} {55995 -84393} }
+gui_zoom -window Schematic.1 -rect { {11216 -109725} {57712 -82957} }
+gui_zoom -window Schematic.1 -rect { {10574 -109646} {59517 -81469} }
+gui_zoom -window Schematic.1 -rect { {9900 -109550} {61419 -79890} }
+gui_zoom -window Schematic.1 -rect { {-1211 -109505} {53020 -78284} }
+gui_zoom -window Schematic.1 -rect { {-1211 -118867} {53020 -87647} }
+gui_zoom -window Schematic.1 -rect { {-1211 -128230} {53020 -97009} }
+gui_zoom -window Schematic.1 -rect { {-1211 -131723} {53020 -100502} }
+gui_zoom -window Schematic.1 -rect { {-1211 -122072} {53020 -90852} }
+gui_zoom -window Schematic.1 -rect { {1421 -121669} {53070 -91935} }
+gui_zoom -window Schematic.1 -rect { {3902 -121294} {53091 -92976} }
+gui_zoom -window Schematic.1 -rect { {6266 -120945} {53113 -93976} }
+gui_zoom -window Schematic.1 -rect { {8454 -120417} {53070 -94731} }
+gui_zoom -window Schematic.1 -rect { {10474 -119793} {52966 -95331} }
+gui_zoom -window Schematic.1 -rect { {11663 -119711} {52131 -96414} }
+gui_zoom -window Schematic.1 -rect { {12816 -119638} {51357 -97450} }
+gui_zoom -window Schematic.1 -rect { {13904 -119550} {50610 -98419} }
+gui_zoom -window Schematic.1 -rect { {14951 -119475} {49909 -99350} }
+gui_zoom -window Schematic.1 -rect { {14185 -120351} {50983 -99166} }
+gui_zoom -window Schematic.1 -rect { {13372 -121250} {52107 -98950} }
+gui_zoom -window Schematic.1 -rect { {12514 -122193} {53287 -98720} }
+gui_zoom -window Schematic.1 -rect { {11583 -123208} {54503 -98499} }
+gui_zoom -window Schematic.1 -rect { {10609 -124265} {55787 -98256} }
+gui_zoom -window Schematic.1 -rect { {9592 -125363} {57148 -97985} }
+gui_zoom -window Schematic.1 -rect { {8503 -126529} {58562 -97711} }
+gui_zoom -window Schematic.1 -rect { {7376 -127766} {60070 -97431} }
+gui_zoom -window Schematic.1 -rect { {-1850 -129074} {53617 -97142} }
+gui_zoom -window Schematic.1 -rect { {-1850 -86313} {53617 -54381} }
+gui_zoom -window Schematic.1 -rect { {802 -86857} {53628 -56445} }
+gui_zoom -window Schematic.1 -rect { {3338 -87351} {53648 -58388} }
+gui_zoom -window Schematic.1 -rect { {5756 -87773} {53670 -60189} }
+gui_zoom -window Schematic.1 -rect { {8116 -88073} {53749 -61802} }
+gui_zoom -window Schematic.1 -rect { {10353 -88357} {53812 -63338} }
+gui_zoom -window Schematic.1 -rect { {10295 -89817} {56042 -63480} }
+gui_zoom -window Schematic.1 -rect { {10233 -91326} {58387 -63603} }
+gui_zoom -window Schematic.1 -rect { {-849 -93742} {52657 -62939} }
+gui_zoom -window Schematic.1 -rect { {-2279 -95376} {54042 -62952} }
+gui_zoom -window Schematic.1 -rect { {-3742 -97051} {55544 -62921} }
+gui_zoom -window Schematic.1 -rect { {-5312 -98837} {57094 -62910} }
+gui_zoom -window Schematic.1 -rect { {-6952 -100689} {58738 -62871} }
+gui_zoom -window Schematic.1 -rect { {-8706 -102643} {60442 -62834} }
+gui_zoom -window Schematic.1 -rect { {-10482 -104549} {62305 -62646} }
+gui_zoom -window Schematic.1 -rect { {-14526 -107771} {66349 -61212} }
+gui_zoom -window Schematic.1 -rect { {-16668 -109965} {68463 -60955} }
+gui_zoom -window Schematic.1 -rect { {-21398 -113777} {73193 -59322} }
+gui_zoom -window Schematic.1 -rect { {-23877 -116342} {75692 -59021} }
+gui_zoom -window Schematic.1 -rect { {-26491 -119088} {78319 -58749} }
+gui_zoom -window Schematic.1 -rect { {-29241 -121945} {81084 -58431} }
+gui_zoom -window Schematic.1 -rect { {-35428 -126894} {87157 -56323} }
+gui_zoom -window Schematic.1 -rect { {-38628 -130244} {90408 -55958} }
+gui_zoom -window Schematic.1 -rect { {-41978 -133780} {93849 -55584} }
+gui_zoom -window Schematic.1 -rect { {-45577 -137501} {97400 -55190} }
+gui_zoom -window Schematic.1 -rect { {-49339 -141409} {101162 -54765} }
+gui_zoom -window Schematic.1 -rect { {-53268 -145501} {105154 -54297} }
+gui_zoom -window Schematic.1 -rect { {-53268 -118150} {105154 -26947} }
+gui_zoom -window Schematic.1 -rect { {-53268 -90800} {105154 404} }
+gui_zoom -window Schematic.1 -rect { {-53268 -86276} {105154 4927} }
+gui_zoom -window Schematic.1 -rect { {-53268 -113627} {105154 -22424} }
+gui_zoom -window Schematic.1 -rect { {-53268 -140977} {105154 -49774} }
+gui_zoom -window Schematic.1 -rect { {-53268 -145501} {105154 -54297} }
+gui_zoom -window Schematic.1 -rect { {-53268 -118150} {105154 -26947} }
+gui_zoom -window Schematic.1 -rect { {-53268 -90800} {105154 404} }
+gui_zoom -window Schematic.1 -rect { {-57476 -100168} {109285 -4164} }
+gui_zoom -window Schematic.1 -rect { {-61864 -110052} {113673 -8995} }
+gui_zoom -window Schematic.1 -rect { {-66435 -120450} {118341 -14075} }
+gui_zoom -window Schematic.1 -rect { {-71316 -131357} {123185 -19383} }
+gui_zoom -window Schematic.1 -rect { {-76394 -142899} {128344 -25032} }
+gui_zoom -window Schematic.1 -rect { {-71623 -149094} {123366 -36840} }
+gui_zoom -window Schematic.1 -rect { {-66888 -155044} {118815 -48135} }
+gui_zoom -window Schematic.1 -rect { {-62560 -160739} {114300 -58921} }
+gui_zoom -window Schematic.1 -rect { {-58271 -166175} {110167 -69206} }
+gui_zoom -window Schematic.1 -rect { {-54357 -170175} {106061 -77823} }
+gui_zoom -window Schematic.1 -rect { {-50481 -164179} {102297 -76225} }
+gui_zoom -window Schematic.1 -rect { {-46853 -158378} {98650 -74612} }
+gui_zoom -window Schematic.1 -rect { {-43366 -152778} {95209 -73001} }
+gui_zoom -window Schematic.1 -rect { {-40106 -147477} {91870 -71498} }
+gui_zoom -window Schematic.1 -rect { {-36976 -142214} {88715 -69854} }
+gui_zoom -window Schematic.1 -rect { {-33976 -137179} {85730 -68265} }
+gui_zoom -window Schematic.1 -rect { {-31103 -132372} {82903 -66739} }
+gui_zoom -window Schematic.1 -rect { {-28428 -127866} {80149 -65359} }
+gui_zoom -window Schematic.1 -rect { {-25802 -123513} {77605 -63982} }
+gui_zoom -window Schematic.1 -rect { {-23363 -119386} {75120 -62690} }
+gui_zoom -window Schematic.1 -rect { {-20974 -115485} {72819 -61488} }
+gui_zoom -window Schematic.1 -rect { {-20974 -99292} {72819 -45296} }
+gui_zoom -window Schematic.1 -rect { {-20974 -83099} {72819 -29103} }
+gui_zoom -window Schematic.1 -rect { {-20974 -66907} {72819 -12910} }
+gui_zoom -window Schematic.1 -rect { {-20974 -50714} {72819 3282} }
+gui_zoom -window Schematic.1 -rect { {-20974 -66907} {72819 -12910} }
+gui_zoom -window Schematic.1 -rect { {-20974 -83099} {72819 -29103} }
+gui_zoom -window Schematic.1 -rect { {-20974 -99292} {72819 -45296} }
+gui_zoom -window Schematic.1 -rect { {-18762 -98755} {70565 -47330} }
+gui_zoom -window Schematic.1 -rect { {-16657 -98173} {68415 -49197} }
+gui_zoom -window Schematic.1 -rect { {-14605 -97560} {66417 -50916} }
+gui_zoom -window Schematic.1 -rect { {-12712 -96825} {64452 -52402} }
+gui_zoom -window Schematic.1 -rect { {-10870 -96090} {62619 -53783} }
+gui_zoom -window Schematic.1 -rect { {-9083 -95412} {60907 -55119} }
+gui_zoom -window Schematic.1 -rect { {-5910 -93887} {57717 -57257} }
+gui_zoom -window Schematic.1 -rect { {-4413 -93309} {56184 -58424} }
+gui_zoom -window Schematic.1 -rect { {-2970 -92757} {54741 -59533} }
+gui_zoom -window Schematic.1 -rect { {-1583 -92090} {53380 -60447} }
+gui_zoom -window Schematic.1 -rect { {302 -91469} {52648 -61334} }
+gui_zoom -window Schematic.1 -rect { {3184 -90221} {50771 -62825} }
+gui_zoom -window Schematic.1 -rect { {4836 -89664} {50157 -63573} }
+gui_zoom -window Schematic.1 -rect { {4836 -81840} {50157 -55748} }
+gui_zoom -window Schematic.1 -rect { {4836 -74015} {50157 -47924} }
+gui_zoom -window Schematic.1 -rect { {4836 -66191} {50157 -40100} }
+gui_zoom -window Schematic.1 -rect { {4836 -74015} {50157 -47924} }
+gui_zoom -window Schematic.1 -rect { {4836 -81840} {50157 -55748} }
+gui_zoom -window Schematic.1 -rect { {4836 -89664} {50157 -63573} }
+gui_zoom -window Schematic.1 -rect { {5835 -88767} {48998 -63918} }
+gui_zoom -window Schematic.1 -rect { {6781 -87914} {47889 -64248} }
+gui_zoom -window Schematic.1 -rect { {5593 -88257} {48864 -63346} }
+gui_zoom -window Schematic.1 -rect { {4350 -88637} {49898 -62415} }
+gui_zoom -window Schematic.1 -rect { {3054 -89049} {51000 -61447} }
+gui_zoom -window Schematic.1 -rect { {1708 -89557} {52178 -60502} }
+gui_zoom -window Schematic.1 -rect { {317 -90095} {53443 -59511} }
+gui_zoom -window Schematic.1 -rect { {-3611 -91596} {55418 -57614} }
+gui_zoom -window Schematic.1 -rect { {-5168 -92213} {56967 -56442} }
+gui_zoom -window Schematic.1 -rect { {-6795 -92875} {58611 -55221} }
+gui_zoom -window Schematic.1 -rect { {-8534 -93808} {60314 -54172} }
+gui_zoom -window Schematic.1 -rect { {-10344 -94754} {62128 -53032} }
+gui_zoom -window Schematic.1 -rect { {-12271 -95751} {64015 -51834} }
+gui_zoom -window Schematic.1 -rect { {-14268 -96797} {66033 -50567} }
+gui_zoom -window Schematic.1 -rect { {-16387 -97939} {68141 -49276} }
+gui_zoom -window Schematic.1 -rect { {-18573 -99120} {70404 -47897} }
+gui_zoom -window Schematic.1 -rect { {-20945 -100333} {72714 -46414} }
+gui_zoom -window Schematic.1 -rect { {-20945 -116503} {72714 -62583} }
+gui_zoom -window Schematic.1 -rect { {-20945 -131802} {72714 -77882} }
+gui_zoom -window Schematic.1 -rect { {-20945 -115632} {72714 -61713} }
+gui_zoom -window Schematic.1 -rect { {-20945 -99462} {72714 -45543} }
+gui_zoom -window Schematic.1 -rect { {-20945 -83293} {72714 -29373} }
+gui_zoom -window Schematic.1 -rect { {-20945 -67123} {72714 -13204} }
+gui_zoom -window Schematic.1 -rect { {-20945 -83293} {72714 -29373} }
+gui_zoom -window Schematic.1 -rect { {-20945 -99462} {72714 -45543} }
+gui_zoom -window Schematic.1 -rect { {-20945 -115632} {72714 -61713} }

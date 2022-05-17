@@ -1,0 +1,109 @@
+0 
+28
++itf+/home/z/program/Synopsys/vcs/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc-4.8
+-Mcfl= -pipe -fPIC -O -I/home/z/program/Synopsys/vcs/include
+-Mcplusplus=g++-4.8
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags=-L/usr/lib/x86_64-linux-gnu -L/lib/x86_64-linux-gnu -Wl,--no-as-needed -Wl,--no-as-needed -rdynamic
+-Mobjects= /home/z/program/Synopsys/vcs/linux64/lib/libvirsim.so /home/z/program/Synopsys/vcs/linux64/lib/liberrorinf.so /home/z/program/Synopsys/vcs/linux64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/home/z/program/Synopsys/vcs/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/home/z/program/Synopsys/vcs/include
+-debug_access+r
+-f flist
+-full64
+-gen_obj
+-picarchive
+-sverilog
+-top
+/home/z/program/Synopsys/vcs/linux64/bin/vcs1
+bus
+61
+sysc_uni_pwd=/home/z/files/code/RookieSoC
+no_proxy=localhost,127.0.0.0/8,::1
+https_proxy=http://127.0.0.1:7891/
+http_proxy=http://127.0.0.7:7891/
+XMODIFIERS=@im=ibus
+XDG_SESSION_TYPE=x11
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_CLASS=user
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+XAUTHORITY=/run/user/1000/gdm/Xauthority
+WINDOWPATH=2
+VTE_VERSION=6800
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/home/z/program/Synopsys/vcs
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USERNAME=z
+UNAME=/bin/uname
+TOOL_HOME=/home/z/program/Synopsys/vcs/linux64
+SYSTEMD_EXEC_PID=1771
+SYN_HOME=/home/z/program/Synopsys/syn
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+SSH_AGENT_LAUNCHER=gnome-keyring
+SNPS_VCS_INTERNAL_LINKER_NEEDS_NO_AS_NEEDED=1
+SESSION_MANAGER=local/z:@/tmp/.ICE-unix/1746,unix/z:/tmp/.ICE-unix/1746
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+SCL_HOME=/home/z/program/Synopsys/scl
+QT_IM_MODULE=ibus
+QT_ACCESSIBILITY=1
+OVA_UUM=0
+NO_PROXY=localhost,127.0.0.0/8,::1
+MFLAGS=
+MAKE_TERMOUT=/dev/pts/0
+MAKE_TERMERR=/dev/pts/0
+MAKELEVEL=1
+MAKEFLAGS=
+LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_ALL=C
+HTTP_PROXY=http://127.0.0.7:7891/
+HTTPS_PROXY=http://127.0.0.1:7891/
+GTK_MODULES=gail:atk-bridge
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+GNOME_TERMINAL_SERVICE=:1.93
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/246700f1_c926_4a21_a333_b9e1d0591183
+GNOME_SHELL_SESSION_MODE=ubuntu
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDMSESSION=ubuntu
+DESKTOP_SESSION=ubuntu
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+CPATH=/usr/include/x86_64-linux-gnu
+COLORTERM=truecolor
+0
+9
+1652713259 bus/bus_slave_mux.v
+1652612462 bus/bus_master_mux.v
+1652682349 bus/bus_addr_dec.v
+1652611253 bus/bus_arbiter.v
+1652681320 bus/bus.h
+1652612427 include/stddef.h
+1652772271 ./bus/bus.v
+1652772418 flist
+1464145466 /home/z/program/Synopsys/vcs/linux64/lib/vcsdp_lite.tab
+4
+0 
+1464147802 /home/z/program/Synopsys/vcs/linux64/lib/libvirsim.so
+1464147272 /home/z/program/Synopsys/vcs/linux64/lib/liberrorinf.so
+1464147248 /home/z/program/Synopsys/vcs/linux64/lib/libsnpsmalloc.so
+1652772443 simv.daidir

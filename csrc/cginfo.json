@@ -1,0 +1,99 @@
+{
+    "MlibObjs": {},
+    "PrevCompiledModules": {},
+    "CurCompileUdps": {},
+    "CompileStatus": "Successful",
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "bus": [
+            "bus",
+            "UfirL",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "PEModules": [],
+    "stat": {
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 84616,
+            "ru_stime_sec": 0.00191,
+            "ru_minflt": 207,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 1
+        },
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.050883999999999999,
+            "ru_maxrss_kb": 86028,
+            "ru_stime_sec": 0.0078279999999999999,
+            "ru_minflt": 5136,
+            "ru_nivcsw": 8,
+            "ru_majflt": 22,
+            "ru_nvcsw": 37
+        },
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0,
+            "ru_maxrss_kb": 84616,
+            "ru_stime_sec": 0.00191,
+            "ru_minflt": 207,
+            "ru_nivcsw": 0,
+            "ru_majflt": 0,
+            "ru_nvcsw": 1
+        },
+        "mopSpeed": 69776.980261471443,
+        "mop/quad": 1.8850415512465375,
+        "nMops": 1361,
+        "Frontend(%)": 72.289704357214916,
+        "nQuads": 722,
+        "ru_self_end": {
+            "ru_utime_sec": 0.070388999999999993,
+            "ru_maxrss_kb": 94784,
+            "ru_stime_sec": 0.0078279999999999999,
+            "ru_minflt": 6702,
+            "ru_nivcsw": 9,
+            "ru_majflt": 22,
+            "ru_nvcsw": 37
+        },
+        "totalObjSize": 148861,
+        "quadSpeed": 37016.149705203803,
+        "outputSizePerQuad": 206.0,
+        "CodeGen(%)": 27.710295642785088
+    },
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 87610
+    },
+    "CompileProcesses": [
+        "cgproc.11281.json"
+    ],
+    "CurCompileModules": [
+        "...MASTER...",
+        "...MASTER...",
+        "std",
+        "std",
+        "bus",
+        "bus"
+    ],
+    "LVLData": [
+        "SIM"
+    ],
+    "Misc": {
+        "daidir_abs": "/home/z/files/code/RookieSoC/simv.daidir",
+        "cwd": "/home/z/files/code/RookieSoC",
+        "csrc": "csrc",
+        "csrc_abs": "/home/z/files/code/RookieSoC/csrc",
+        "daidir": "simv.daidir",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.0"
+    }
+}
