@@ -1,5 +1,5 @@
 `include "include/stddef.h"
-`include "bus/bus.h"
+`include "chip/bus/bus.h"
 
 module bus_master_mux (
     input wire [`ADDR_WIDTH - 1:0] m0_addr,

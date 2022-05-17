@@ -1,9 +1,9 @@
 `include "include/stddef.h"
-`include "bus/bus.h"
-`include "bus/bus_arbiter.v"
-`include "bus/bus_addr_dec.v"
-`include "bus/bus_master_mux.v"
-`include "bus/bus_slave_mux.v"
+`include "chip/bus/bus.h"
+`include "chip/bus/bus_arbiter.v"
+`include "chip/bus/bus_addr_dec.v"
+`include "chip/bus/bus_master_mux.v"
+`include "chip/bus/bus_slave_mux.v"
 
 module bus (
     input wire clk,
