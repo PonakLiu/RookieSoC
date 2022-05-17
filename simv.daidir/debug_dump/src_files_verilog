@@ -1,7 +1,0 @@
-/home/z/files/code/RookieSoC/bus/bus.h
-/home/z/files/code/RookieSoC/bus/bus.v
-/home/z/files/code/RookieSoC/bus/bus_addr_dec.v
-/home/z/files/code/RookieSoC/bus/bus_arbiter.v
-/home/z/files/code/RookieSoC/bus/bus_master_mux.v
-/home/z/files/code/RookieSoC/bus/bus_slave_mux.v
-/home/z/files/code/RookieSoC/include/stddef.h
