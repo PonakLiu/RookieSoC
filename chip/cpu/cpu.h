@@ -20,3 +20,5 @@
 `define CTRL_OP_NOP 2'h0
 `define CTRL_OP_WRCR 2'h1
 `define CTRL_OP_EXRT 2'h2
+`define SPM_SIZE 4096
+`define SPM_ADDR_WIDTH 12
