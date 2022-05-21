@@ -15,7 +15,7 @@ module gpr (
     input wire [`REG_ADDR_WIDTH - 1:0] wr_addr,
     input wire [`DATA_WIDTH - 1:0] wr_data
 );
-    reg [`DATA_WIDTH - 1:0] gpr [`REG_NUM - 1:0];
+    reg [`DATA_WIDTH - 1:0] gpr [`REG_ADDR_WIDTH - 1:0];
     integer i;
 
     //read
